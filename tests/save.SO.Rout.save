@@ -1,0 +1,39 @@
+
+R Under development (unstable) (2013-10-11 r64042) -- "Unsuffered Consequences"
+Copyright (C) 2013 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> library(symbolicDA) 
+Loading required package: clusterSim
+Loading required package: cluster
+Loading required package: MASS
+Loading required package: XML
+
+Attaching package: 'symbolicDA'
+
+The following object is masked from 'package:clusterSim':
+
+    .medoid
+
+> data("cars",package="symbolicDA")
+> save.SO(cars,file="cars_backup.xml")
+[1] "cars_backup.xml"
+Warning message:
+In newXMLNode("assofile", doc = doc, attrs = c(`xmlns:xsi` = "http://www.w3.org/2000/10/XMLSchema-instance",  :
+  Don't specify namespace definitions via 'attrs'; use namespaceDefinitions
+> 
+> proc.time()
+   user  system elapsed 
+   3.79    0.10    3.93 
