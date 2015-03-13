@@ -1,7 +1,7 @@
 
-R Under development (unstable) (2013-10-11 r64042) -- "Unsuffered Consequences"
-Copyright (C) 2013 The R Foundation for Statistical Computing
-Platform: x86_64-w64-mingw32/x64 (64-bit)
+R Under development (unstable) (2015-03-10 r67973) -- "Unsuffered Consequences"
+Copyright (C) 2015 The R Foundation for Statistical Computing
+Platform: i386-w64-mingw32/i386 (32-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
 You are welcome to redistribute it under certain conditions.
@@ -33,6 +33,7 @@ The following object is masked from 'package:clusterSim':
 > x<-cars
 > d<-dist.SDA(x, type="U_2")
 > wynik<-hclust(d, method="ward", members=NULL)
+The "ward" method has been renamed to "ward.D"; note new "ward.D2"
 > clusters<-cutree(wynik, 4)
 > G1d<-index.G1d(d, clusters)
 > print(G1d)
@@ -54,8 +55,8 @@ The following object is masked from 'package:clusterSim':
 + res[nc-min_nc+1,2] <- G1d <- index.G1d(md,cl2$clustering)   
 + clusters <- rbind(clusters, cl2$clustering)
 + }
-> print(paste("max G1d for",(min_nc:max_nc)[which.max(res[,2])],"clusters=",max(res[,2])))
-[1] "max G1d for 9 clusters= 101.360662551791"
+> print(sprintf("max G1d for %f clusters=%.3f",max(res[,2]),(min_nc:max_nc)[which.max(res[,2])]))
+[1] "max G1d for 101.360663 clusters=9.000"
 > print("clustering for max G1d")
 [1] "clustering for max G1d"
 > print(clusters[which.max(res[,2]),])
@@ -66,4 +67,4 @@ The following object is masked from 'package:clusterSim':
 > 
 > proc.time()
    user  system elapsed 
-  56.16    0.17   56.51 
+  23.18    0.09   23.41 

@@ -25,7 +25,7 @@ cl2 <- pam(md, nc, diss=TRUE)
 res[nc-min_nc+1,2] <- G1d <- index.G1d(md,cl2$clustering)   
 clusters <- rbind(clusters, cl2$clustering)
 }
-print(paste("max G1d for",(min_nc:max_nc)[which.max(res[,2])],"clusters=",max(res[,2])))
+print(sprintf("max G1d for %f clusters=%.3f",max(res[,2]),(min_nc:max_nc)[which.max(res[,2])]))
 print("clustering for max G1d")
 print(clusters[which.max(res[,2]),])
 write.table(res,file="G1d_res.csv",sep=";",dec=",",row.names=TRUE,col.names=FALSE)

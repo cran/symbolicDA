@@ -141,7 +141,7 @@ For all fields symbol N.A. means not available value.
 For futher details see \url{../doc/SDA.pdf}
 }
 \seealso{
-\code{\link{dist.SDA}}, \code{\link{summary.symbolic}}.
+\code{\link{dist.SDA}}.
 }
 \keyword{symbolic}
 \keyword{SDA}

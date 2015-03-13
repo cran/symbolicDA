@@ -111,6 +111,3 @@ replication.SDA<-function(table.Symbolic, u=2, method="SClust", S=10,fixedAsampl
    resul
 }
 
-#library(symbolicDA)
-#t<-parse.SO("car")
-#print(replication.SDA(t,4,S=3,method="average",type="U_2"))

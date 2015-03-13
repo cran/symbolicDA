@@ -174,7 +174,7 @@ resul
 
 #symbolic.class<-function(individuals,variables,detailsIC,detailsN,detailsListNom,detailsNM,detailsListNomModif,indivIC,indivN,indivListNom,indivNM,indivListNomModif){
 
-summary.symbolic=function(object,...){
+.summary.symbolic=function(object,...){
     paste("Number of individuals",nrow(object$individuals),"\n",
     "Number of individuals",nrow(object$variables))
 }

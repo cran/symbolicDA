@@ -1,7 +1,7 @@
 
-R Under development (unstable) (2013-10-11 r64042) -- "Unsuffered Consequences"
-Copyright (C) 2013 The R Foundation for Statistical Computing
-Platform: x86_64-w64-mingw32/x64 (64-bit)
+R Under development (unstable) (2015-03-10 r67973) -- "Unsuffered Consequences"
+Copyright (C) 2015 The R Foundation for Statistical Computing
+Platform: i386-w64-mingw32/i386 (32-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
 You are welcome to redistribute it under certain conditions.
@@ -183,4 +183,4 @@ The following object is masked from 'package:clusterSim':
 > 
 > proc.time()
    user  system elapsed 
-  30.35    0.15   30.60 
+  12.66    0.18   12.85 

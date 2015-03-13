@@ -8,6 +8,7 @@ import(
   rgl,
   XML,
   clusterSim,
+  cluster,
   shapes,
   ade4,
   e1071

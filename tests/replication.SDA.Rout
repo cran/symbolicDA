@@ -1,7 +1,7 @@
 
-R Under development (unstable) (2013-10-11 r64042) -- "Unsuffered Consequences"
-Copyright (C) 2013 The R Foundation for Statistical Computing
-Platform: x86_64-w64-mingw32/x64 (64-bit)
+R Under development (unstable) (2015-03-10 r67973) -- "Unsuffered Consequences"
+Copyright (C) 2015 The R Foundation for Statistical Computing
+Platform: i386-w64-mingw32/i386 (32-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
 You are welcome to redistribute it under certain conditions.
@@ -170,4 +170,4 @@ $cRand
 > 
 > proc.time()
    user  system elapsed 
- 186.81    0.14  187.90 
+  90.32    0.17   91.07 
