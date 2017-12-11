@@ -1,4 +1,4 @@
-library("symbolicDA")
+require(symbolicDA)
 data("cars",package="symbolicDA")
 r<- HINoV.SDA(cars, u=3, distance="U_2")
 print(r$stopri)

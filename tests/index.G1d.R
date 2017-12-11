@@ -1,5 +1,5 @@
+require(symbolicDA)
 # Example 1
-library("symbolicDA")
 library(stats)
 data("cars",package="symbolicDA")
 x<-cars

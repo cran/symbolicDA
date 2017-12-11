@@ -11,7 +11,7 @@
 #*  
 #***********************************************************************************************************************************************
 
-.medoid<-function(dist,cl,klasa)
+.medoid2<-function(dist,cl,klasa)
 {
 	min_i<-NA
 	min_dist<-NA
@@ -71,7 +71,7 @@ DClust<-function(dist,cl,iter=100)
 			}
 		}
     for(i in 1:max(cl)){
-      medoids[i]<-.medoid(dist,cl_result,i)
+      medoids[i]<-.medoid2(dist,cl_result,i)
     }
 		if (test_licznik>iter) test<-FALSE
 	}

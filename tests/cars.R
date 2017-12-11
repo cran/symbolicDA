@@ -1,4 +1,4 @@
-library("symbolicDA")
+require(symbolicDA)
 data("cars",package="symbolicDA")
 sdt<-cars
 r<- HINoV.SDA(sdt, u=5, distance="U_3")

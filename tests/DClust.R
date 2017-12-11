@@ -1,4 +1,4 @@
-library("symbolicDA")
+require(symbolicDA)
 data("cars",package="symbolicDA")
 sdt<-cars
 dist<-dist.SDA(sdt, type="U_3")

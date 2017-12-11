@@ -3,7 +3,7 @@ doc=newXMLDoc()
 #top=newXMLNode("assofile",doc=doc)
 top=newXMLNode("assofile",doc=doc,attrs=c("xmlns:xsi"="http://www.w3.org/2000/10/XMLSchema-instance","xsi:noNamespaceSchemaLocation"="asso.xsd"),
 namespaceDefinitions = c("xsi" = "http://www.w3.org/2000/10/XMLSchema-instance"))
-newXMLNode("contains",attrs=c(DIST_MATRIX="NO",FILES="YES",HEADER="YES",HIERARCHIE="NO",INDIVIDUALS="YES",MATCH_MATRIX="NO",RECTANGLE_MATRIX="NO",RULES="NO",VARIABLES="YES"),parent=top)
+newXMLNode("contains",attrs=c(DIST_MATRIX="NO",FILES="YES",HEADER="YES",HIERARCHIE="NO",INDIVIDUALS="YES",MATCH_MATRIX="NO",RECTANGLE_MATRIX="YES",RULES="NO",VARIABLES="YES"),parent=top)
 filed=newXMLNode("filed",parent=top)
                                                                                                                                                                                                                                              newXMLNode("Procedure","SDAEdit",parent=filed)
 newXMLNode("version","0.99",parent=filed)

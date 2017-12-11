@@ -86,7 +86,7 @@ replication.SDA<-function(table.Symbolic, u=2, method="SClust", S=10,fixedAsampl
       #print(clA)
       #print(clB)
       for(i in 1:u){
-        a_centroA[s,i]<-.medoid(as.matrix(dA),clA,i)
+        a_centroA[s,i]<-.medoid2(as.matrix(dA),clA,i)
       }
       #print("debug : 9")
       d<-as.matrix(d)

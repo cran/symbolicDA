@@ -1,4 +1,4 @@
-library("symbolicDA")
+require(symbolicDA)
 data("cars",package="symbolicDA")
 y<-cars
 cl<-SClust(y, 4, iter=150)

@@ -1,7 +1,7 @@
 
-R Under development (unstable) (2015-03-10 r67973) -- "Unsuffered Consequences"
-Copyright (C) 2015 The R Foundation for Statistical Computing
-Platform: i386-w64-mingw32/i386 (32-bit)
+R version 3.4.3 (2017-11-30) -- "Kite-Eating Tree"
+Copyright (C) 2017 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
 You are welcome to redistribute it under certain conditions.
@@ -15,38 +15,37 @@ Type 'demo()' for some demos, 'help()' for on-line help, or
 'help.start()' for an HTML browser interface to help.
 Type 'q()' to quit R.
 
-> library("symbolicDA")
+> require(symbolicDA)
+Loading required package: symbolicDA
 Loading required package: clusterSim
 Loading required package: cluster
 Loading required package: MASS
+
+This is package 'modeest' written by P. PONCET.
+For a complete list of functions, use 'library(help = "modeest")' or 'help.start()'.
+
 Loading required package: XML
-
-Attaching package: 'symbolicDA'
-
-The following object is masked from 'package:clusterSim':
-
-    .medoid
-
 > data("cars",package="symbolicDA")
-> r<- HINoV.SDA(cars, u=3, distance="U_2")
+> sdt<-cars
+> r<- HINoV.SDA(sdt, u=5, distance="U_3")
 > print(r$stopri)
-      [,1]     [,2]
- [1,]    3 3.090556
- [2,]    4 3.046064
- [3,]    9 2.737461
- [4,]    1 2.082814
- [5,]    8 1.910823
- [6,]    7 1.685097
- [7,]    5 1.566636
- [8,]   11 1.534665
- [9,]   12 1.416376
-[10,]   10 1.381502
-[11,]    2 1.314787
-[12,]    6 0.555058
+      [,1]      [,2]
+ [1,]    9 2.4443998
+ [2,]    3 2.3610548
+ [3,]    8 2.3565958
+ [4,]    1 2.1142407
+ [5,]    7 2.0967534
+ [6,]    4 2.0577333
+ [7,]    5 1.9950517
+ [8,]   12 1.6435545
+ [9,]   11 1.3697911
+[10,]   10 1.3593540
+[11,]    2 0.9824519
+[12,]    6 0.4773809
 > plot(r$stopri[,2], xlab="Variable number", ylab="topri",
 + xaxt="n", type="b")
 > axis(1,at=c(1:max(r$stopri[,1])),labels=r$stopri[,1])
 > 
 > proc.time()
    user  system elapsed 
-  11.31    0.20   11.52 
+  23.45    0.40   25.14 

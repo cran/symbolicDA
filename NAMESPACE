@@ -14,3 +14,10 @@ import(
   e1071
 )
 
+importFrom("graphics", "lines", "plot", "points", "polygon", "rect",
+            "segments", "text")
+
+importFrom("stats", "as.dist", "as.formula", "as.hclust", "cor",
+            "cutree", "dist", "formula", "hclust", "prcomp", "rnorm",
+            "terms")
+

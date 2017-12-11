@@ -287,6 +287,9 @@ variables<-table.Symbolic$variables
 
 
 dist.SDA<-function(table.Symbolic,type="U_2",subType=NULL,gamma=0.5,power=2,probType="J",probAggregation="P_1",s=0.5,p=2,variableSelection=NULL,weights=NULL){
+  if(type=="H"){
+    return (dist.Symbolic(SO2Simple(table.Symbolic),type="H",power=power));
+  }
   types<-c(paste("U",2:4,sep="_"),"C_1",paste("SO",1:5,sep="_"),"H","L_1","L_2")
   subTypes<-c(paste("D",1:5,sep="_"))
   probTypes=c("J","CHI2","REN","CHER","LP")
@@ -300,7 +303,7 @@ dist.SDA<-function(table.Symbolic,type="U_2",subType=NULL,gamma=0.5,power=2,prob
   if(is.null(subType) && (type=="C_1" || type=="SO_1")){
     stop(paste("Dissimilarity subType for(C_1) and (SO_1) distance should be one of the following:",paste(subTypes,collapse=",")," but not null"))
   }
-
+  
   if(sum(types==type)==0){
     stop(paste("Dissimilarity type should be one of the following:",paste(types,collapse=",")))
   }
@@ -325,180 +328,180 @@ dist.SDA<-function(table.Symbolic,type="U_2",subType=NULL,gamma=0.5,power=2,prob
     variableSelection=(1:variablesNo)
   distS<-array(0,c(individualsNo,individualsNo))
   for (i in 1:(individualsNo-1))
-  for (j in (i+1):individualsNo){
-    if(type=="U_2"){
-      D<-0
-      for(k in variableSelection){
-        d<-.gsum(table.Symbolic,i,j,k)-.gprod(table.Symbolic,i,j,k)+gamma*(2*.gprod(table.Symbolic,i,j,k)-.gabs(table.Symbolic,i,k)-.gabs(table.Symbolic,j,k))
-        D<-D+d^power
-        if(variables[k,"type"]=="NM"){
-          D<-D+.probDist(indivNM,i,j,k,probType,s,p)^power
-        }
-      }
-      distS[i,j]<-D^(1/power)		
-      distS[j,i]<-distS[i,j]
-    }
-    if(type=="U_3"){
-      D<-0
-      for(k in variableSelection){
-        #print(paste("krok",i,j,k))
-        #print(paste("gsum",.gsum(table.Symbolic,i,j,k)))
-        #print(paste("gprod",.gprod(table.Symbolic,i,j,k)))
-        #print(paste("gdomain",.gdomainLength(table.Symbolic,k)))
-        d<-.gsum(table.Symbolic,i,j,k)-.gprod(table.Symbolic,i,j,k)+gamma*(2*.gprod(table.Symbolic,i,j,k)-.gabs(table.Symbolic,i,k)-.gabs(table.Symbolic,j,k))
-        d<-d/.gdomainLength(table.Symbolic,k)
-        #if(is.inf(d))stop("niesk")
-        #print(d)
-        D<-D+d^power
-        if(variables[k,"type"]=="NM"){
-          D<-D+.probDist(indivNM,i,j,k,probType,s,p)^power
-        }
-      }
-      distS[i,j]<-D^(1/power)		
-      distS[j,i]<-distS[i,j]
-    }
-    if(type=="U_4"){
-      D<-0
-      for(k in variableSelection){
-      print(paste("k=",k))
-        d<-.gsum(table.Symbolic,i,j,k)-.gprod(table.Symbolic,i,j,k)+gamma*(2*.gprod(table.Symbolic,i,j,k)-.gabs(table.Symbolic,i,k)-.gabs(table.Symbolic,j,k))
-        d<-d/.gdomainLength(table.Symbolic,i)
-        D<-D+weights[k]*d^power
-        if(variables[k,"type"]=="NM"){
-          D<-D+weights[k]*.probDist(indivNM,i,j,k,probType,s,p)^power
-        }
-      }
-      distS[i,j]<-D^(1/power)		
-      distS[j,i]<-distS[i,j]
-    }
-    if(type=="C_1"){
-      D<-0
-      for(k in variableSelection){
-        alpha=.C1alpha(table.Symbolic,i,j,k)
-        beta=.C1gamma(table.Symbolic,i,j,k)
-        gamma=.C1gamma(table.Symbolic,i,j,k)
-        if(subType=="D_1"){
-          d<-alpha/(alpha+beta+gamma)
-        }
-        if(subType=="D_2"){
-          d<-2*alpha/(2*alpha+beta+gamma)
-        }
-        if(subType=="D_3"){
-          d<-alpha/(alpha+2*beta+2*gamma)
-        }
-        if(subType=="D_4"){
-          d<-alpha/(2*alpha+2*beta)+alpha(2*alpha+2*gamma)
-        }
-        if(subType=="D_5"){
-          d<-alpha/(sqrt(alpha+beta)*sqrt(alpha+gamma))
-        }
-        if(!is.nan(d))
-        D<-D+(d^power)/length(variables)
-      }
-      distS[i,j]<-D^(1/power)		
-      distS[j,i]<-distS[i,j]
-    }
-    if(type=="SO_1"){
-      D<-0
-      for(k in variableSelection){
-        alpha=as.numeric(.C1alpha(table.Symbolic,i,j,k))
-        bbeta=as.numeric(.C1beta(table.Symbolic,i,j,k))
-        gamma=as.numeric(.C1gamma(table.Symbolic,i,j,k))
-        if(subType=="D_1"){
-          d<-alpha/(alpha+bbeta+gamma)
-        }
-        if(subType=="D_2"){
-          d<-2*alpha/(2*alpha+bbeta+gamma)
-        }
-        if(subType=="D_3"){
-          d<-alpha/(alpha+2*bbeta+2*gamma)
-        }
-        if(subType=="D_4"){
-          d<-alpha/(2*alpha+2*bbeta)+alpha(2*alpha+2*gamma)
-        }
-        if(subType=="D_5"){
-          d<-alpha/(sqrt(alpha+bbeta)*sqrt(alpha+gamma))
-        }
-        if(!is.nan(d))
-        D<-D+weights[k]*(d^power)
-      }
-      distS[i,j]<-D^(1/power)		
-      distS[j,i]<-distS[i,j]
-    }
-    if(type=="SO_2"){
-      D<-0
-      for(k in variableSelection){
-        d<-.gsum(table.Symbolic,i,j,k)-.gprod(table.Symbolic,i,j,k)+gamma*(2*.gprod(table.Symbolic,i,j,k)-.gabs(table.Symbolic,i,k)-.gabs(table.Symbolic,j,k))
-        d<-d/.gsum(table.Symbolic,i,j,k)
-        D<-D+(d^power)/length(variables)
-      }
-      distS[i,j]<-D^(1/power)		
-      distS[j,i]<-distS[i,j]
-    }
-    if(type=="SO_3"){
-      D<-0
-      for(k in variableSelection){
-        d<-.dpsum(table.Symbolic,i,j,variableSelection)-.dpprod(table.Symbolic,i,j,variableSelection)+gamma*(2*.dpprod(table.Symbolic,i,j,variableSelection)-.dpobject(table.Symbolic,i,variableSelection)-.dpobject(table.Symbolic,j,variableSelection))
-        D<-d
-      }
-      distS[i,j]<-D		
-      distS[j,i]<-distS[i,j]
-    }
-    if(type=="SO_4"){
-      D<-0
-      for(k in variableSelection){
-        d<-.dpsum(table.Symbolic,i,j,variableSelection)-.dpprod(table.Symbolic,i,j,variableSelection)+gamma*(2*.dpprod(table.Symbolic,i,j,variableSelection)-.dpobject(table.Symbolic,i,variableSelection)-.dpobject(table.Symbolic,j,variableSelection))
-        D<-d/.dpmax(table.Symbolic,k)
-      }
-      distS[i,j]<-D/.dpmax(table.Symbolic,variableSelection)		
-      distS[j,i]<-distS[i,j]
-    }
-    if(type=="SO_5"){
-      D<-0
-      for(k in variableSelection){
-        d<-.dpsum(table.Symbolic,i,j,variableSelection)-.dpprod(table.Symbolic,i,j,variableSelection)+gamma*(2*.dpprod(table.Symbolic,i,j,variableSelection)-.dpobject(table.Symbolic,i,variableSelection)-.dpobject(table.Symbolic,j,variableSelection))
-        D<-d/.dpsum(table.Symbolic,i,j,variableSelection)
-      }
-      distS[i,j]<-D		
-      distS[j,i]<-distS[i,j]
-    }
-    if(type=="L_1" || type=="L_2"){
-      if(type=="L_1"){
-        L_i<-1
-      }
-      else{
-        L_i<-2
-      }
-      D<-0
-      for(k in variableSelection){
-        if(variables[k,"type"]=="IC"){
-          D<-D+abs(indivIC[i,k,1]-indivIC[j,k,1])^2++(indivIC[i,k,2]-indivIC[j,k,2])^L_i
-        }
-        if(variables[k,"type"]=="MN" || variables[k,"type"]=="N" || variables[k,"type"]=="NM"){
+    for (j in (i+1):individualsNo){
+      if(type=="U_2"){
+        D<-0
+        for(k in variableSelection){
+          d<-.gsum(table.Symbolic,i,j,k)-.gprod(table.Symbolic,i,j,k)+gamma*(2*.gprod(table.Symbolic,i,j,k)-.gabs(table.Symbolic,i,k)-.gabs(table.Symbolic,j,k))
+          D<-D+d^power
           if(variables[k,"type"]=="NM"){
-            list1<-.nomValues(indivNM,i,k)
-            list2<-.nomValues(indivNM,j,k)
+            D<-D+.probDist(indivNM,i,j,k,probType,s,p)^power
           }
-          else{
-            list1<-.nomValues(indivN,i,k)
-            list2<-.nomValues(indivN,j,k)
+        }
+        distS[i,j]<-D^(1/power)		
+        distS[j,i]<-distS[i,j]
+      }
+      if(type=="U_3"){
+        D<-0
+        for(k in variableSelection){
+          #print(paste("krok",i,j,k))
+          #print(paste("gsum",.gsum(table.Symbolic,i,j,k)))
+          #print(paste("gprod",.gprod(table.Symbolic,i,j,k)))
+          #print(paste("gdomain",.gdomainLength(table.Symbolic,k)))
+          d<-.gsum(table.Symbolic,i,j,k)-.gprod(table.Symbolic,i,j,k)+gamma*(2*.gprod(table.Symbolic,i,j,k)-.gabs(table.Symbolic,i,k)-.gabs(table.Symbolic,j,k))
+          d<-d/.gdomainLength(table.Symbolic,k)
+          #if(is.inf(d))stop("niesk")
+          #print(d)
+          D<-D+d^power
+          if(variables[k,"type"]=="NM"){
+            D<-D+.probDist(indivNM,i,j,k,probType,s,p)^power
           }
-          for(l in 1:max(c(list1[,"value"],list2[,"value"]))){
+        }
+        distS[i,j]<-D^(1/power)		
+        distS[j,i]<-distS[i,j]
+      }
+      if(type=="U_4"){
+        D<-0
+        for(k in variableSelection){
+          print(paste("k=",k))
+          d<-.gsum(table.Symbolic,i,j,k)-.gprod(table.Symbolic,i,j,k)+gamma*(2*.gprod(table.Symbolic,i,j,k)-.gabs(table.Symbolic,i,k)-.gabs(table.Symbolic,j,k))
+          d<-d/.gdomainLength(table.Symbolic,i)
+          D<-D+weights[k]*d^power
+          if(variables[k,"type"]=="NM"){
+            D<-D+weights[k]*.probDist(indivNM,i,j,k,probType,s,p)^power
+          }
+        }
+        distS[i,j]<-D^(1/power)		
+        distS[j,i]<-distS[i,j]
+      }
+      if(type=="C_1"){
+        D<-0
+        for(k in variableSelection){
+          alpha=.C1alpha(table.Symbolic,i,j,k)
+          beta=.C1gamma(table.Symbolic,i,j,k)
+          gamma=.C1gamma(table.Symbolic,i,j,k)
+          if(subType=="D_1"){
+            d<-alpha/(alpha+beta+gamma)
+          }
+          if(subType=="D_2"){
+            d<-2*alpha/(2*alpha+beta+gamma)
+          }
+          if(subType=="D_3"){
+            d<-alpha/(alpha+2*beta+2*gamma)
+          }
+          if(subType=="D_4"){
+            d<-alpha/(2*alpha+2*beta)+alpha(2*alpha+2*gamma)
+          }
+          if(subType=="D_5"){
+            d<-alpha/(sqrt(alpha+beta)*sqrt(alpha+gamma))
+          }
+          if(!is.nan(d))
+            D<-D+(d^power)/length(variables)
+        }
+        distS[i,j]<-D^(1/power)		
+        distS[j,i]<-distS[i,j]
+      }
+      if(type=="SO_1"){
+        D<-0
+        for(k in variableSelection){
+          alpha=as.numeric(.C1alpha(table.Symbolic,i,j,k))
+          bbeta=as.numeric(.C1beta(table.Symbolic,i,j,k))
+          gamma=as.numeric(.C1gamma(table.Symbolic,i,j,k))
+          if(subType=="D_1"){
+            d<-alpha/(alpha+bbeta+gamma)
+          }
+          if(subType=="D_2"){
+            d<-2*alpha/(2*alpha+bbeta+gamma)
+          }
+          if(subType=="D_3"){
+            d<-alpha/(alpha+2*bbeta+2*gamma)
+          }
+          if(subType=="D_4"){
+            d<-alpha/(2*alpha+2*bbeta)+alpha(2*alpha+2*gamma)
+          }
+          if(subType=="D_5"){
+            d<-alpha/(sqrt(alpha+bbeta)*sqrt(alpha+gamma))
+          }
+          if(!is.nan(d))
+            D<-D+weights[k]*(d^power)
+        }
+        distS[i,j]<-D^(1/power)		
+        distS[j,i]<-distS[i,j]
+      }
+      if(type=="SO_2"){
+        D<-0
+        for(k in variableSelection){
+          d<-.gsum(table.Symbolic,i,j,k)-.gprod(table.Symbolic,i,j,k)+gamma*(2*.gprod(table.Symbolic,i,j,k)-.gabs(table.Symbolic,i,k)-.gabs(table.Symbolic,j,k))
+          d<-d/.gsum(table.Symbolic,i,j,k)
+          D<-D+(d^power)/length(variables)
+        }
+        distS[i,j]<-D^(1/power)		
+        distS[j,i]<-distS[i,j]
+      }
+      if(type=="SO_3"){
+        D<-0
+        for(k in variableSelection){
+          d<-.dpsum(table.Symbolic,i,j,variableSelection)-.dpprod(table.Symbolic,i,j,variableSelection)+gamma*(2*.dpprod(table.Symbolic,i,j,variableSelection)-.dpobject(table.Symbolic,i,variableSelection)-.dpobject(table.Symbolic,j,variableSelection))
+          D<-d
+        }
+        distS[i,j]<-D		
+        distS[j,i]<-distS[i,j]
+      }
+      if(type=="SO_4"){
+        D<-0
+        for(k in variableSelection){
+          d<-.dpsum(table.Symbolic,i,j,variableSelection)-.dpprod(table.Symbolic,i,j,variableSelection)+gamma*(2*.dpprod(table.Symbolic,i,j,variableSelection)-.dpobject(table.Symbolic,i,variableSelection)-.dpobject(table.Symbolic,j,variableSelection))
+          D<-d/.dpmax(table.Symbolic,k)
+        }
+        distS[i,j]<-D/.dpmax(table.Symbolic,variableSelection)		
+        distS[j,i]<-distS[i,j]
+      }
+      if(type=="SO_5"){
+        D<-0
+        for(k in variableSelection){
+          d<-.dpsum(table.Symbolic,i,j,variableSelection)-.dpprod(table.Symbolic,i,j,variableSelection)+gamma*(2*.dpprod(table.Symbolic,i,j,variableSelection)-.dpobject(table.Symbolic,i,variableSelection)-.dpobject(table.Symbolic,j,variableSelection))
+          D<-d/.dpsum(table.Symbolic,i,j,variableSelection)
+        }
+        distS[i,j]<-D		
+        distS[j,i]<-distS[i,j]
+      }
+      if(type=="L_1" || type=="L_2"){
+        if(type=="L_1"){
+          L_i<-1
+        }
+        else{
+          L_i<-2
+        }
+        D<-0
+        for(k in variableSelection){
+          if(variables[k,"type"]=="IC"){
+            D<-D+abs(indivIC[i,k,1]-indivIC[j,k,1])^2++(indivIC[i,k,2]-indivIC[j,k,2])^L_i
+          }
+          if(variables[k,"type"]=="MN" || variables[k,"type"]=="N" || variables[k,"type"]=="NM"){
             if(variables[k,"type"]=="NM"){
-              D<-D+abs(.p(list1,l)-.p(list2,l))^L_i
+              list1<-.nomValues(indivNM,i,k)
+              list2<-.nomValues(indivNM,j,k)
             }
             else{
-              D<-D+abs(.pp(list1,indivN,k,l)-.pp(list2,indivN,k,l))^L_i
+              list1<-.nomValues(indivN,i,k)
+              list2<-.nomValues(indivN,j,k)
+            }
+            for(l in 1:max(c(list1[,"value"],list2[,"value"]))){
+              if(variables[k,"type"]=="NM"){
+                D<-D+abs(.p(list1,l)-.p(list2,l))^L_i
+              }
+              else{
+                D<-D+abs(.pp(list1,indivN,k,l)-.pp(list2,indivN,k,l))^L_i
+              }
             }
           }
+          #print(paste(variables[k,"type"],D))
         }
-        #print(paste(variables[k,"type"],D))
+        distS[i,j]<-D^(1/power)		
+        distS[j,i]<-distS[i,j]
       }
-      distS[i,j]<-D^(1/power)		
-      distS[j,i]<-distS[i,j]
     }
-  }
-	as.dist(distS)
+  as.dist(distS)
 }
 
 

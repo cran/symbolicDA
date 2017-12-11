@@ -1,4 +1,4 @@
-library(symbolicDA) 
+require(symbolicDA)
 # Example 1
 data("cars",package="symbolicDA")
 sdt<-cars
@@ -13,4 +13,4 @@ dist<-as.matrix(dist.SDA(sdt))
 classes<-DClust(dist, cl=5, iter=100)
 for(i in 1:max(classes)){
   getOption("device")()  
-  zoomStar(sdt, .medoid(dist, classes, i))}
+  zoomStar(sdt, .medoid2(dist, classes, i))}

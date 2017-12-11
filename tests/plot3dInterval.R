@@ -1,6 +1,5 @@
-library(symbolicDA)
-library(rgl)
-library(clusterSim)
+require(symbolicDA)
+require(rgl)
 means <- matrix(c(0,0,0,
 0,0,6,
 0,6,0,

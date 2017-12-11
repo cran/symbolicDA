@@ -1,7 +1,7 @@
 
-R Under development (unstable) (2015-03-10 r67973) -- "Unsuffered Consequences"
-Copyright (C) 2015 The R Foundation for Statistical Computing
-Platform: i386-w64-mingw32/i386 (32-bit)
+R version 3.4.3 (2017-11-30) -- "Kite-Eating Tree"
+Copyright (C) 2017 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
 You are welcome to redistribute it under certain conditions.
@@ -15,25 +15,22 @@ Type 'demo()' for some demos, 'help()' for on-line help, or
 'help.start()' for an HTML browser interface to help.
 Type 'q()' to quit R.
 
-> library(symbolicDA) 
+> require(symbolicDA)
+Loading required package: symbolicDA
 Loading required package: clusterSim
 Loading required package: cluster
 Loading required package: MASS
+
+This is package 'modeest' written by P. PONCET.
+For a complete list of functions, use 'library(help = "modeest")' or 'help.start()'.
+
 Loading required package: XML
-
-Attaching package: 'symbolicDA'
-
-The following object is masked from 'package:clusterSim':
-
-    .medoid
-
 > data("cars",package="symbolicDA")
-> save.SO(cars,file="cars_backup.xml")
-[1] "cars_backup.xml"
-Warning message:
-In newXMLNode("assofile", doc = doc, attrs = c(`xmlns:xsi` = "http://www.w3.org/2000/10/XMLSchema-instance",  :
-  Don't specify namespace definitions via 'attrs'; use namespaceDefinitions
+> sdt<-cars
+> clust<-SClust(sdt, cl=3, iter=50)
+> print(clust)
+ [1] 1 2 3 3 1 2 2 3 1 1 3 1 2 2 1 1 1 2 2 3 3 1 1 2 2 1 2 2 1 1
 > 
 > proc.time()
    user  system elapsed 
-   2.46    0.20    2.60 
+   8.06    0.42    8.75 
