@@ -27,17 +27,17 @@ Andrzej Dudek \email{andrzej.dudek@ue.wroc.pl}, Justyna Wilk \email{justyna.wilk
 Department of Econometrics and Computer Science,Wroclaw University of Economics, Poland \url{http://keii.ue.wroc.pl/symbolicDA}
 }
 \references{
-Breckenridge, J.N. (2000), \emph{Validating cluster analysis: consistent replication and symmetry}, "Multivariate Behavioral Research", 35 (2), pp. 261-285.
+Breckenridge, J.N. (2000), \emph{Validating cluster analysis: consistent replication and symmetry}, "Multivariate Behavioral Research", 35 (2), 261-285. Available at: \url{http://dx.doi.org/10.1207/S15327906MBR3502_5}.
 
-Gordon, A.D. (1999), \emph{Classification}, Chapman and Hall/CRC, London.
+Gordon, A.D. (1999), \emph{Classification}, Chapman and Hall/CRC, London. ISBN 9781584880134.
 
-Hubert, L., Arabie, P. (1985), \emph{Comparing Partitions}, "Journal of Classification", no. 1, pp. 193-218.
+Hubert, L., Arabie, P. (1985), \emph{Comparing partitions}, "Journal of Classification", no. 1, 193-218. Available at: \url{https://link.springer.com/article/10.1007\%2FBF01908075}.
 
-Milligan, G.W. (1996), \emph{Clustering Validation: Results and Implications for Applied Analyses}, In P. Arabie, L.J. Hubert, G. de Soete (Eds.), \emph{Clustering and classification}, World Scientific, Singapore, pp. 341-375.
+Milligan, G.W. (1996), \emph{Clustering validation: results and implications for applied analyses}, In P. Arabie, L.J. Hubert, G. de Soete (Eds.), \emph{Clustering and classification}, World Scientific, Singapore, 341-375. ISBN 9789810212872.
 
-Bock H.H., Diday E. (Eds.) (2000), \emph{Analysis of Symbolic Data. Explanatory methods for extracting statistical information from complex data}, Springer-Verlag, Berlin.
+Bock H.H., Diday E. (eds.) (2000), \emph{Analysis of Symbolic Data. Explanatory methods for extracting statistical information from complex data}, Springer-Verlag, Berlin.
 
-Diday E., Noirhomme-Fraiture M. (Eds.) (2008), \emph{Symbolic Data Analysis with SODAS Software}, John Wiley & Sons, Chichester.
+Diday E., Noirhomme-Fraiture M. (eds.) (2008), \emph{Symbolic Data Analysis with SODAS Software}, John Wiley & Sons, Chichester.
 }
 \details{
 See file \url{../doc/replicationSDA_details.pdf} for further details

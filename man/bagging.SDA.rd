@@ -3,7 +3,7 @@
 \title{Bagging algorithm for optimal split based on decision tree for symbolic objects}
 \description{Bagging algorithm for optimal split based on decision (classification) tree for symbolic objects}
 \usage{
-bagging.SDA(sdt,formula,testSet, mfinal = 20,rf=FALSE,...) 
+bagging.SDA(sdt,formula,testSet, mfinal=20,rf=FALSE,...) 
 }
 \arguments{
 \item{sdt}{Symbolic data table}
@@ -32,13 +32,13 @@ Marcin Pełka \email{marcin.pelka@ue.wroc.pl}
 Department of Econometrics and Computer Science, University of Economics, Wroclaw, Poland \url{http://keii.ue.wroc.pl/symbolicDA}
 }
 \references{
-Billard L., Diday E. (red.) (2006), \emph{Symbolic Data Analysis, Conceptual Statistics and Data Mining}, John Wiley & Sons, Chichester.
+Billard L., Diday E. (eds.) (2006), \emph{Symbolic Data Analysis, Conceptual Statistics and Data Mining}, John Wiley & Sons, Chichester.
 
 Bock H.H., Diday E. (eds.) (2000), \emph{Analysis of symbolic data. Explanatory methods for extracting statistical information from complex data}, Springer-Verlag, Berlin.
 
-Breiman L. (1996), \emph{Bagging predictors}, Machine Learning, vol. 24, no. 2, pp. 123-140.
+Breiman L. (1996), \emph{Bagging predictors}, Machine Learning, vol. 24, no. 2, pp. 123-140. Available at: \url{https://doi.org/10.1007/BF00058655}.
 
-Diday E., Noirhomme-Fraiture M. (red.) (2008), \emph{Symbolic Data Analysis with SODAS Software}, John Wiley & Sons, Chichester.
+Diday E., Noirhomme-Fraiture M. (eds.) (2008), \emph{Symbolic Data Analysis with SODAS Software}, John Wiley & Sons, Chichester.
 }
 \seealso{
 \code{\link{boosting.SDA}},\code{\link{random.forest.SDA}},\code{\link{decisionTree.SDA}}

@@ -21,3 +21,4 @@ importFrom("stats", "as.dist", "as.formula", "as.hclust", "cor",
             "cutree", "dist", "formula", "hclust", "prcomp", "rnorm",
             "terms")
 
+importFrom("utils", "read.table")

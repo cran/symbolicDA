@@ -27,11 +27,13 @@ Andrzej Dudek \email{andrzej.dudek@ue.wroc.pl}, Justyna Wilk \email{justyna.wilk
 Department of Econometrics and Computer Science, Wroclaw University of Economics, Poland \url{http://keii.ue.wroc.pl/symbolicDA}
 }
 \references{
-Billard L., Diday E. (Eds.) (2006), \emph{Symbolic Data Analysis, Conceptual Statistics and Data Mining}, John Wiley & Sons, Chichester.
+Billard L., Diday E. (eds.) (2006), \emph{Symbolic Data Analysis, Conceptual Statistics and Data Mining}, John Wiley & Sons, Chichester.
 
-Bock H.H., Diday E. (Eds.) (2000), \emph{Analysis of Symbolic Data. Explanatory methods for extracting statistical information from complex data}, Springer-Verlag, Berlin.
+Bock H.H., Diday E. (eds.) (2000), \emph{Analysis of Symbolic Data. Explanatory methods for extracting statistical information from complex data}, Springer-Verlag, Berlin.
 
-Diday E., Noirhomme-Fraiture M. (Eds.) (2008), \emph{Symbolic Data Analysis with SODAS Software}, John Wiley & Sons, Chichester.
+Diday E., Noirhomme-Fraiture M. (eds.) (2008), \emph{Symbolic Data Analysis with SODAS Software}, John Wiley & Sons, Chichester.
+
+Ichino, M., & Yaguchi, H. (1994),\emph{Generalized Minkowski metrics for mixed feature-type data analysis}. IEEE Transactions on Systems, Man, and Cybernetics, 24(4), 698-708. Available at: \url{http://dx.doi.org/10.1109/21.286391}.
 
 Malerba D., Espozito F, Giovalle V., Tamma V. (2001), \emph{Comparing Dissimilarity Measures for Symbolic Data Analysis}, "New Techniques and Technologies for Statistcs" (ETK NTTS'01), pp. 473-481.
 

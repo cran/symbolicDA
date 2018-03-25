@@ -23,9 +23,9 @@ Kohonen, T. (1995), \emph{Self-Organizing Maps}, Springer, Berlin-Heidelberg.
 
 Bock, H.H. (2001), \emph{Clustering Algorithms and Kohonen Maps for Symbolic Data}, International Conference on New Trends in Computational Statistics with Biomedical Applications, ICNCB Proceedings, Osaka, pp. 203-215.
 
-Bock, H.H., Diday, E. (Eds.) (2000), \emph{Analysis of Symbolic Data. Explanatory Methods for Extracting Statistical Information from Complex Data}, Springer-Verlag, Berlin.
+Bock, H.H., Diday, E. (eds.) (2000), \emph{Analysis of Symbolic Data. Explanatory Methods for Extracting Statistical Information from Complex Data}, Springer-Verlag, Berlin.
 
-Diday, E., Noirhomme-Fraiture, M. (Eds.) (2008), \emph{Symbolic Data Analysis with SODAS Software}, John Wiley & Sons, Chichester, pp. 373-392.
+Diday, E., Noirhomme-Fraiture, M. (eds.) (2008), \emph{Symbolic Data Analysis with SODAS Software}, John Wiley & Sons, Chichester, pp. 373-392.
 }
 \details{
 See file \url{../doc/kohonenSDA_details.pdf} for further details

@@ -21,9 +21,9 @@ Department of Econometrics and Computer Science, Wroclaw University of Economics
 \references{
 Ichino, M. (1994), \emph{Feature selection for symbolic data classification}, In: E. Diday, Y. Lechevallier, P.B. Schader, B. Burtschy (Eds.), New Approaches in Classification and data analysis, Springer-Verlag, pp. 423-429.
 
-Bock, H.H., Diday, E. (Eds.) (2000), \emph{Analysis of symbolic data. Explanatory methods for extracting statistical information from complex data}, Springer-Verlag, Berlin.
+Bock, H.H., Diday, E. (eds.) (2000), \emph{Analysis of symbolic data. Explanatory methods for extracting statistical information from complex data}, Springer-Verlag, Berlin.
 
-Diday, E., Noirhomme-Fraiture, M. (Eds.) (2008), \emph{Symbolic Data Analysis with SODAS Software}, John Wiley & Sons, Chichester.
+Diday, E., Noirhomme-Fraiture, M. (eds.) (2008), \emph{Symbolic Data Analysis with SODAS Software}, John Wiley & Sons, Chichester.
 }
 \details{
 See file \url{../doc/IchinoFSSDA_details.pdf} for further details

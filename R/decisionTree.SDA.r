@@ -356,11 +356,11 @@ decisionTree.SDA<-function(sdt,formula,testSet,treshMin=0.0001,treshW=-1e10,tNod
                   dim(czyByloPytanie)<-c(1,length(czyByloPytanie))
                 czyByloPytanie<-sum(czyByloPytanie[,3]==q)
               }
-              t<<-W_actual
+              #t<<-W_actual
               if(is.na(W_actual)){
                 W_actual<-1
               }
-              t1<<-W_maximal
+              #t1<<-W_maximal
               if (W_actual>W_maximal && !is.null(czyByloPytanie) &&czyByloPytanie==0)
               {
                 node_W<-i

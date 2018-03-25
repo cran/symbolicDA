@@ -28,10 +28,7 @@ Loading required package: XML
 > data("cars",package="symbolicDA")
 > save.SO(cars,file="cars_backup.xml")
 [1] "cars_backup.xml"
-Warning message:
-In newXMLNode("assofile", doc = doc, attrs = c(`xmlns:xsi` = "http://www.w3.org/2000/10/XMLSchema-instance",  :
-  Don't specify namespace definitions via 'attrs'; use namespaceDefinitions
 > 
 > proc.time()
    user  system elapsed 
-   4.57    0.32    5.26 
+   3.89    0.28    4.42 

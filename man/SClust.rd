@@ -20,9 +20,9 @@ Andrzej Dudek \email{andrzej.dudek@ue.wroc.pl}, Justyna Wilk \email{justyna.wilk
 Department of Econometrics and Computer Science, Wroclaw University of Economics, Poland \url{http://keii.ue.wroc.pl/symbolicDA}
 }
 \references{
-Bock, H.H., Diday, E. (Eds.) (2000), \emph{Analysis of Symbolic Data. Explanatory Methods for Extracting Statistical Information from Complex Data}, Springer-Verlag, Berlin.
+Bock, H.H., Diday, E. (eds.) (2000), \emph{Analysis of Symbolic Data. Explanatory Methods for Extracting Statistical Information from Complex Data}, Springer-Verlag, Berlin.
 
-Diday, E., Noirhomme-Fraiture, M. (Eds.) (2008), \emph{Symbolic Data Analysis with SODAS Software}, John Wiley & Sons, Chichester, pp. 185-191.
+Diday, E., Noirhomme-Fraiture, M. (eds.) (2008), \emph{Symbolic Data Analysis with SODAS Software}, John Wiley & Sons, Chichester, pp. 185-191.
 
 Verde, R. (2004), \emph{Clustering Methods in Symbolic Data Analysis}, In: D. Banks, L. House, E. R. McMorris, P. Arabie, W. Gaul (Eds.), Classification, clustering and Data mining applications, Springer-Verlag, Heidelberg, pp. 299-317.
 
