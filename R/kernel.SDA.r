@@ -17,7 +17,7 @@ kernel.SDA<-function(sdt,formula,testSet,h,...)
   nrClusters<-max(clusters[testSet])
   p<-nk<-rep(0,nrClusters)
   pred<-rep(0,nrow(sdt$individuals)) 
-  dist<-as.matrix(dist.SDA(sdt,variableSelection=f$variableSelection,...))
+  dist<-as.matrix(dist_SDA(sdt,variableSelection=f$variableSelection,...))
   for (i in testSet)
   {
     for(cl in 1:nrClusters)

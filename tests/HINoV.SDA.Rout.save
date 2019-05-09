@@ -1,6 +1,6 @@
 
-R version 3.4.3 (2017-11-30) -- "Kite-Eating Tree"
-Copyright (C) 2017 The R Foundation for Statistical Computing
+R version 3.6.0 (2019-04-26) -- "Planting of a Tree"
+Copyright (C) 2019 The R Foundation for Statistical Computing
 Platform: x86_64-w64-mingw32/x64 (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
@@ -20,10 +20,6 @@ Loading required package: symbolicDA
 Loading required package: clusterSim
 Loading required package: cluster
 Loading required package: MASS
-
-This is package 'modeest' written by P. PONCET.
-For a complete list of functions, use 'library(help = "modeest")' or 'help.start()'.
-
 Loading required package: XML
 > data("cars",package="symbolicDA")
 > r<- HINoV.SDA(cars, u=3, distance="U_2")
@@ -45,6 +41,3 @@ Loading required package: XML
 + xaxt="n", type="b")
 > axis(1,at=c(1:max(r$stopri[,1])),labels=r$stopri[,1])
 > 
-> proc.time()
-   user  system elapsed 
-  23.21    0.35   24.93 

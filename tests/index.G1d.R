@@ -3,7 +3,7 @@ require(symbolicDA)
 library(stats)
 data("cars",package="symbolicDA")
 x<-cars
-d<-dist.SDA(x, type="U_2")
+d<-dist_SDA(x, type="U_2")
 wynik<-hclust(d, method="ward", members=NULL)
 clusters<-cutree(wynik, 4)
 G1d<-index.G1d(d, clusters)
@@ -13,7 +13,7 @@ print(G1d)
 
 
 data("cars",package="symbolicDA")
-md <- dist.SDA(cars, type="U_3", gamma=0.5, power=2)
+md <- dist_SDA(cars, type="U_3", gamma=0.5, power=2)
 min_nc=2
 max_nc=10
 res <- array(0,c(max_nc-min_nc+1,2))

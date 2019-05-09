@@ -286,7 +286,7 @@ variables<-table.Symbolic$variables
 }
 
 
-dist.SDA<-function(table.Symbolic,type="U_2",subType=NULL,gamma=0.5,power=2,probType="J",probAggregation="P_1",s=0.5,p=2,variableSelection=NULL,weights=NULL){
+dist_SDA<-function(table.Symbolic,type="U_2",subType=NULL,gamma=0.5,power=2,probType="J",probAggregation="P_1",s=0.5,p=2,variableSelection=NULL,weights=NULL){
   if(type=="H"){
     return (dist.Symbolic(SO2Simple(table.Symbolic),type="H",power=power));
   }

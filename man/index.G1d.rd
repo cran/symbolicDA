@@ -4,7 +4,7 @@
 \description{Calculates Calinski-Harabasz pseudo F-statistic based on distance matrix}
 \usage{index.G1d (d,cl)}
 \arguments{
-\item{d}{distance matrix (see \code{\link{dist.SDA}})}
+\item{d}{distance matrix (see \code{\link{dist_SDA}})}
 \item{cl}{a vector of integers indicating the cluster to which each object is allocated}
 }
 \value{
@@ -39,7 +39,7 @@ See file \url{../doc/indexG1d_details.pdf} for further details
 #library(stats)
 #data("cars",package="symbolicDA")
 #x<-cars
-#d<-dist.SDA(x, type="U_2")
+#d<-dist_SDA(x, type="U_2")
 #wynik<-hclust(d, method="ward", members=NULL)
 #clusters<-cutree(wynik, 4)
 #G1d<-index.G1d(d, clusters)
@@ -49,7 +49,7 @@ See file \url{../doc/indexG1d_details.pdf} for further details
 
 
 #data("cars",package="symbolicDA")
-#md <- dist.SDA(cars, type="U_3", gamma=0.5, power=2)
+#md <- dist_SDA(cars, type="U_3", gamma=0.5, power=2)
 # nc - number_of_clusters
 #min_nc=2
 #max_nc=10

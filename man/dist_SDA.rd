@@ -1,9 +1,9 @@
-\name{dist.SDA}
-\alias{dist.SDA}
+\name{dist_SDA}
+\alias{dist_SDA}
 \title{distance measurement for symbolic data}
 \description{calculates distances between symbolic objects described by interval-valued, multinominal and multinominal with weights variables}
 \usage{
-dist.SDA(table.Symbolic,type="U_2",subType=NULL,gamma=0.5,power=2,probType="J",
+dist_SDA(table.Symbolic,type="U_2",subType=NULL,gamma=0.5,power=2,probType="J",
 probAggregation="P_1",s=0.5,p=2,variableSelection=NULL,weights=NULL)
 }
 \arguments{
@@ -53,6 +53,8 @@ Distance measurement for probabilistic symbolic objects consists of two steps:
 Distance measures for mixed symbolic objects - modified Minkowski metrics: L_1 (manhattan distance), L_2 (euclidean distance).
 
 See file \url{../doc/dist_SDA.pdf} for further details
+
+NOTE !!!: In previous version of packege this functian has been call dist.SDA.
 }
 \seealso{
 \code{\link{DClust}}, \code{\link{index.G1d}}; \code{dist.Symbolic} in \code{clusterSim} library
@@ -60,7 +62,7 @@ See file \url{../doc/dist_SDA.pdf} for further details
 \examples{
 # LONG RUNNING - UNCOMMENT TO RUN
 #data("cars",package="symbolicDA")
-#dist<-dist.SDA(cars, type="U_3", gamma=0.3, power=2)
+#dist<-dist_SDA(cars, type="U_3", gamma=0.3, power=2)
 #print(dist)
 }
 \keyword{symbolic,SDA}

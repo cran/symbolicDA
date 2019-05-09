@@ -1,6 +1,6 @@
 
-R version 3.4.3 (2017-11-30) -- "Kite-Eating Tree"
-Copyright (C) 2017 The R Foundation for Statistical Computing
+R version 3.6.0 (2019-04-26) -- "Planting of a Tree"
+Copyright (C) 2019 The R Foundation for Statistical Computing
 Platform: x86_64-w64-mingw32/x64 (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
@@ -20,16 +20,12 @@ Loading required package: symbolicDA
 Loading required package: clusterSim
 Loading required package: cluster
 Loading required package: MASS
-
-This is package 'modeest' written by P. PONCET.
-For a complete list of functions, use 'library(help = "modeest")' or 'help.start()'.
-
 Loading required package: XML
 > # Example 1
 > library(stats)
 > data("cars",package="symbolicDA")
 > x<-cars
-> d<-dist.SDA(x, type="U_2")
+> d<-dist_SDA(x, type="U_2")
 > wynik<-hclust(d, method="ward", members=NULL)
 The "ward" method has been renamed to "ward.D"; note new "ward.D2"
 > clusters<-cutree(wynik, 4)
@@ -41,7 +37,7 @@ The "ward" method has been renamed to "ward.D"; note new "ward.D2"
 > 
 > 
 > data("cars",package="symbolicDA")
-> md <- dist.SDA(cars, type="U_3", gamma=0.5, power=2)
+> md <- dist_SDA(cars, type="U_3", gamma=0.5, power=2)
 > min_nc=2
 > max_nc=10
 > res <- array(0,c(max_nc-min_nc+1,2))
@@ -63,6 +59,3 @@ The "ward" method has been renamed to "ward.D"; note new "ward.D2"
 > plot(res, type="p", pch=0, xlab="Number of clusters", ylab="G1d", xaxt="n")
 > axis(1, c(min_nc:max_nc))
 > 
-> proc.time()
-   user  system elapsed 
-  36.50    0.37   37.32 

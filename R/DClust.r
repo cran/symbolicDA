@@ -107,16 +107,16 @@ DClust<-function(dist,cl,iter=100)
           #stop("test")
     }
     if(table.Symbolic$variables[k,"type"]=="NM"){
-          resul<-resul+as.matrix(dist.SDA(table.Symbolic,probType="CHI",power=1,variableSelection=k))[objectSelection,objectSelection]
+          resul<-resul+as.matrix(dist_SDA(table.Symbolic,probType="CHI",power=1,variableSelection=k))[objectSelection,objectSelection]
           #print(resul)
     }
     if(table.Symbolic$variables[k,"type"]=="N"){
-          resul<-resul+as.matrix(dist.SDA(table.Symbolic,type="L_2",power=1,variableSelection=k))[objectSelection,objectSelection]
+          resul<-resul+as.matrix(dist_SDA(table.Symbolic,type="L_2",power=1,variableSelection=k))[objectSelection,objectSelection]
           #print(resul)
     }
     if(table.Symbolic$variables[k,"type"]=="MN"){
-          #print(as.matrix(dist.SDA(table.Symbolic,type="L_2",power=1,variableSelection=k)))
-          resul<-resul+as.matrix(dist.SDA(table.Symbolic,type="L_2",power=1,variableSelection=k))[objectSelection,objectSelection]
+          #print(as.matrix(dist_SDA(table.Symbolic,type="L_2",power=1,variableSelection=k)))
+          resul<-resul+as.matrix(dist_SDA(table.Symbolic,type="L_2",power=1,variableSelection=k))[objectSelection,objectSelection]
           #print(resul)
     }
   }

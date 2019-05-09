@@ -66,7 +66,7 @@ replication.SDA<-function(table.Symbolic, u=2, method="SClust", S=10,fixedAsampl
       else{
           #t<-sample(1:33,33)
           #d<-dist(t)
-          d<-dist.SDA(x,...)
+          d<-dist_SDA(x,...)
           dA<-as.matrix(d)[sampleA,sampleA]
           dimnames(dA)[[1]]<-1:length(sampleA)
           dimnames(dA)[[2]]<-1:length(sampleA)

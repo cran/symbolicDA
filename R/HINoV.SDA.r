@@ -17,7 +17,7 @@ HINoV.SDA<-function(table.Symbolic, u=NULL, distance="H", Index="cRAND", method 
 	{
 		#print(i)
 		#print(x)
-		d <- dist.SDA(z, type=distance,variableSelection=i,...)	
+		d <- dist_SDA(z, type=distance,variableSelection=i,...)	
 		#print("po dist.symbolic")
 		if(method=="pam")
 		{

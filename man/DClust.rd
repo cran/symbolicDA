@@ -31,13 +31,13 @@ Celeux, G., Diday, E., Govaert, G., Lechevallier, Y., Ralambondrainy, H. (1988),
 See file \url{../doc/DClust_details.pdf} for further details
 }
 \seealso{
-\code{\link{SClust}}, \code{\link{dist.SDA}}; \code{dist} in \code{stats} library; \code{dist.GDM} in \code{clusterSim} library; \code{pam} in \code{cluster} library
+\code{\link{SClust}}, \code{\link{dist_SDA}}; \code{dist} in \code{stats} library; \code{dist.GDM} in \code{clusterSim} library; \code{pam} in \code{cluster} library
 }
 \examples{
 # LONG RUNNING - UNCOMMENT TO RUN
 #data("cars",package="symbolicDA")
 #sdt<-cars
-#dist<-dist.SDA(sdt, type="U_3")
+#dist<-dist_SDA(sdt, type="U_3")
 #clust<-DClust(dist, cl=5, iter=100)
 #print(clust)
 

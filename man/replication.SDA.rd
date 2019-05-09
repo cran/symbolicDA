@@ -11,7 +11,7 @@ replication.SDA(table.Symbolic, u=2, method="SClust", S=10, fixedAsample=NULL, .
 \item{method}{clustering method: "SClust" (default), "DClust", "single", "complete", "average", "mcquitty", "median", "centroid", "ward", "pam", "diana"}
 \item{S}{the number of simulations used to compute average adjusted Rand index}
 \item{fixedAsample}{if NULL \emph{A} sample is generated randomly, otherwise this parameter contains object numbers arbitrarily assigned to \emph{A} sample}
-\item{...}{additional argument passed to \code{\link{dist.SDA}} function}
+\item{...}{additional argument passed to \code{\link{dist_SDA}} function}
 }
 \value{
 \item{A}{3-dimensional array containing data matrices for A sample of objects in each simulation (first dimension represents simulation number, second - object number, third - variable number)}
@@ -43,7 +43,7 @@ Diday E., Noirhomme-Fraiture M. (eds.) (2008), \emph{Symbolic Data Analysis with
 See file \url{../doc/replicationSDA_details.pdf} for further details
 }
 \seealso{
-\code{\link{dist.SDA}}, \code{\link{SClust}}, \code{\link{DClust}}; \code{hclust} in \code{stats} library; \code{pam} in \code{cluster} library; \code{replication.Mod} in \code{clusterSim} library
+\code{\link{dist_SDA}}, \code{\link{SClust}}, \code{\link{DClust}}; \code{hclust} in \code{stats} library; \code{pam} in \code{cluster} library; \code{replication.Mod} in \code{clusterSim} library
 }
 \examples{
 #data("cars",package="symbolicDA")

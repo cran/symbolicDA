@@ -9,10 +9,10 @@ HINoV.SDA(table.Symbolic, u=NULL, distance="H", Index="cRAND",method="pam",...)
 \arguments{
 \item{table.Symbolic}{symbolic data table}
 \item{u}{number of clusters}
-\item{distance}{symbolic distance measure as parameter type in \code{\link{dist.SDA}}}
+\item{distance}{symbolic distance measure as parameter type in \code{\link{dist_SDA}}}
 \item{method}{clustering method: "single", "ward", "complete", "average", "mcquitty", "median", "centroid", "pam" (default), "SClust", "DClust"}
 \item{Index}{"cRAND" - adjusted Rand index (default); "RAND" - Rand index}
-\item{...}{additional argument passed to \code{\link{dist.SDA}} function}
+\item{...}{additional argument passed to \code{\link{dist_SDA}} function}
 }
 \value{
 \item{parim}{\emph{m} x \emph{m} symmetric matrix (\emph{m} - number of variables). Matrix contains pairwise adjusted Rand (or Rand) indices for partitions formed by the \emph{j}-th variable with partitions formed by the \emph{l}-th variable}
@@ -28,7 +28,7 @@ Bock, H.H., Diday, E. (eds.) (2000), \emph{Analysis of Symbolic Data. Explanator
 
 Diday, E., Noirhomme-Fraiture, M. (eds.) (2008), \emph{Symbolic Data Analysis with SODAS Software}, John Wiley & Sons, Chichester.
 
-Carmone, F.J., Kara, A., Maxwell, S. (1999), \emph{HINoV: a new method to improve market segment definition by identifying noisy variables}, "Journal of Marketing Research", November, vol. 36, 501-509. Available at: \url{http://dx.doi.org/10.2307/3152003}.
+Carmone, F.J., Kara, A., Maxwell, S. (1999), \emph{HINoV: a new method to improve market segment definition by identifying noisy variables}, "Journal of Marketing Research", November, vol. 36, 501-509.
 
 Hubert, L.J., Arabie, P. (1985), \emph{Comparing partitions}, "Journal of Classification", no. 1, 193-218. Available at: \url{http://dx.doi.org/10.1007\%2FBF01908075}.
 
@@ -42,7 +42,7 @@ For HINoV in symbolic data analysis there can be used methods based on distance 
 See file \url{../doc/HINoVSDA_details.pdf} for further details
 }
 \seealso{
-\code{DClust}, \code{SClust}, \code{dist.SDA}; \code{HINoV.Symbolic}, \code{dist.Symbolic} in \code{clusterSim} library; \code{hclust} in \code{stats} library; \code{pam} in \code{cluster} library
+\code{DClust}, \code{SClust}, \code{dist_SDA}; \code{HINoV.Symbolic}, \code{dist.Symbolic} in \code{clusterSim} library; \code{hclust} in \code{stats} library; \code{pam} in \code{cluster} library
 }
 \examples{
 # LONG RUNNING - UNCOMMENT TO RUN

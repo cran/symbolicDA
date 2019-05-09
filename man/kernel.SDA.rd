@@ -10,7 +10,7 @@ kernel.SDA(sdt,formula,testSet,h,...)
 \item{formula}{a formula, as in the \code{lm} function}
 \item{testSet}{vector with numbers objects ij test set}
 \item{h}{kernel bandwith size}
-\item{...}{argumets passed to dist.SDA functon}
+\item{...}{argumets passed to dist_SDA functon}
 }
 \details{
 Kernel discriminant analysis for symbolic data is based on the intensity estimatior (that is based on dissimiliarity measure for symbolic data) due to the fact that classical well-known density estimator can not be applied. Density estimator can not be applied due to the fact that symbolic objects are not object of euclidean space and the integral operator for symbolic data is not applicable.
@@ -35,7 +35,7 @@ Bock H.H., Diday E. (eds.) (2000), \emph{Analysis of symbolic data. Explanatory 
 Diday E., Noirhomme-Fraiture M. (eds.) (2008), \emph{Symbolic Data Analysis with SODAS Software}, John Wiley & Sons, Chichester.
 }
 \seealso{
-\code{\link{dist.SDA}}
+\code{\link{dist_SDA}}
 }
 \examples{
 # Example 1
