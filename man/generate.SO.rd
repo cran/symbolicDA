@@ -35,4 +35,5 @@ see \code{\link{symbolic.object}} for symbolic data table R structure representa
 \examples{
 # Example will be available in next version of package, thank You for your patience :-)
 }
-\keyword{symbolic,SDA}
+\keyword{symbolic}
+\concept{SDA}

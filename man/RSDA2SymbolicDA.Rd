@@ -98,5 +98,6 @@ With included code from (former) RSDA package by Oldemar Rodriguez Rojas
 }
 \keyword{Symbolic}
 \keyword{Table}
-\keyword{SymbolicDA}
-\keyword{RSDA}
+\concept{SDA}
+\concept{SymbolicDA}
+\concept{RSDA}

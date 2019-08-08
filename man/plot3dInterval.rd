@@ -41,4 +41,4 @@ Diday, E., Noirhomme-Fraiture, M. (eds.) (2008), \emph{Symbolic Data Analysis wi
 #rgl.viewpoint(15,20,30)
 #rgl.snapshot("8_clusters_3d.jpg")
 }
-\keyword{hplot}
+\concept{hplot}

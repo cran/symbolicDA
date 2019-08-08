@@ -54,7 +54,7 @@ Distance measures for mixed symbolic objects - modified Minkowski metrics: L_1 (
 
 See file \url{../doc/dist_SDA.pdf} for further details
 
-NOTE !!!: In previous version of packege this functian has been call dist.SDA.
+NOTE !!!: In previous version of package this functian has been called dist.SDA.
 }
 \seealso{
 \code{\link{DClust}}, \code{\link{index.G1d}}; \code{dist.Symbolic} in \code{clusterSim} library
@@ -65,4 +65,5 @@ NOTE !!!: In previous version of packege this functian has been call dist.SDA.
 #dist<-dist_SDA(cars, type="U_3", gamma=0.3, power=2)
 #print(dist)
 }
-\keyword{symbolic,SDA}
+\keyword{symbolic}
+\concept{SDA}

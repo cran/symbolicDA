@@ -144,4 +144,4 @@ For futher details see \url{../doc/SDA.pdf}
 \code{\link{dist_SDA}}.
 }
 \keyword{symbolic}
-\keyword{SDA}
+\concept{SDA}

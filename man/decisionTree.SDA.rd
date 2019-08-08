@@ -59,4 +59,5 @@ Diday E., Noirhomme-Fraiture M. (eds.) (2008), \emph{Symbolic Data Analysis with
 #summary(tree) # a very gerneral information
 #tree  # summary information
 }
-\keyword{symbolic,SDA}
+\keyword{symbolic}
+\concept{SDA}
