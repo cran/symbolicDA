@@ -16,7 +16,7 @@ IchinoFS.SDA(table.Symbolic)
 }
 \author{
 Andrzej Dudek \email{andrzej.dudek@ue.wroc.pl}, Justyna Wilk \email{justyna.wilk@ue.wroc.pl}
-Department of Econometrics and Computer Science, Wroclaw University of Economics, Poland \url{http://keii.ue.wroc.pl/symbolicDA}
+Department of Econometrics and Computer Science, Wroclaw University of Economics, Poland \url{http://keii.ue.wroc.pl/symbolicDA/}
 }
 \references{
 Ichino, M. (1994), \emph{Feature selection for symbolic data classification}, In: E. Diday, Y. Lechevallier, P.B. Schader, B. Burtschy (Eds.), New Approaches in Classification and data analysis, Springer-Verlag, pp. 423-429.

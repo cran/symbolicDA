@@ -21,7 +21,7 @@ See file \url{../doc/Symbolic_MDS.pdf} for further details
 \author{
 Andrzej Dudek \email{andrzej.dudek@ue.wroc.pl} 
 
-Department of Econometrics and Computer Science, University of Economics, Wroclaw, Poland \url{http://keii.ue.wroc.pl/symbolicDA}
+Department of Econometrics and Computer Science, University of Economics, Wroclaw, Poland \url{http://keii.ue.wroc.pl/symbolicDA/}
 }
 \references{
 Billard L., Diday E. (red.) (2006), \emph{Symbolic Data Analysis, Conceptual Statistics and Data Mining}, John Wiley & Sons, Chichester.
@@ -30,7 +30,7 @@ Bock H.H., Diday E. (eds.) (2000), \emph{Analysis of symbolic data. Explanatory 
 
 Diday E., Noirhomme-Fraiture M. (red.) (2008), \emph{Symbolic Data Analysis with SODAS Software}, John Wiley & Sons, Chichester.
 
-Groenen P.J.F, Winsberg S., Rodriguez O., Diday E. (2006), I-Scal: multidimensional scaling of interval dissimilarities, \emph{Computational Statistics and Data Analysis}, 51, pp. 360-378. Available at: \url{https://dx.doi.org/10.1016/j.csda.2006.04.003}.
+Groenen P.J.F, Winsberg S., Rodriguez O., Diday E. (2006), I-Scal: multidimensional scaling of interval dissimilarities, \emph{Computational Statistics and Data Analysis}, 51, pp. 360-378. Available at: \doi{10.1016/j.csda.2006.04.003}.
 
 Lechevallier Y. (ed.), \emph{Scientific report for unsupervised classification, validation and cluster analysis}, Analysis System of Symbolic Official Data - Project Number IST-2000-25161, project report.
 }

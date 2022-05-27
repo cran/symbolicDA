@@ -21,7 +21,7 @@ HINoV.SDA(table.Symbolic, u=NULL, distance="H", Index="cRAND",method="pam",...)
 }
 \author{
 Andrzej Dudek \email{andrzej.dudek@ue.wroc.pl}, Justyna Wilk \email{justyna.wilk@ue.wroc.pl}
-Department of Econometrics and Computer Science, Wroclaw University of Economics, Poland \url{http://keii.ue.wroc.pl/symbolicDA}
+Department of Econometrics and Computer Science, Wroclaw University of Economics, Poland \url{http://keii.ue.wroc.pl/symbolicDA/}
 }
 \references{
 Bock, H.H., Diday, E. (eds.) (2000), \emph{Analysis of Symbolic Data. Explanatory Methods for Extracting Statistical Information from Complex Data}, Springer-Verlag, Berlin.
@@ -30,11 +30,11 @@ Diday, E., Noirhomme-Fraiture, M. (eds.) (2008), \emph{Symbolic Data Analysis wi
 
 Carmone, F.J., Kara, A., Maxwell, S. (1999), \emph{HINoV: a new method to improve market segment definition by identifying noisy variables}, "Journal of Marketing Research", November, vol. 36, 501-509.
 
-Hubert, L.J., Arabie, P. (1985), \emph{Comparing partitions}, "Journal of Classification", no. 1, 193-218. Available at: \url{http://dx.doi.org/10.1007\%2FBF01908075}.
+Hubert, L.J., Arabie, P. (1985), \emph{Comparing partitions}, "Journal of Classification", no. 1, 193-218. Available at: \doi{10.1007/BF01908075}.
 
-Rand, W.M. (1971), \emph{Objective criteria for the evaluation of clustering methods}, "Journal of the American Statistical Association", no. 336, 846-850. Available at: \url{http://dx.doi.org/10.1080/01621459.1971.10482356}.
+Rand, W.M. (1971), \emph{Objective criteria for the evaluation of clustering methods}, "Journal of the American Statistical Association", no. 336, 846-850. Available at: \doi{10.1080/01621459.1971.10482356}.
 
-Walesiak, M., Dudek, A. (2008), \emph{Identification of noisy variables for nonmetric and symbolic data in cluster analysis}, In: C. Preisach, H. Burkhardt, L. Schmidt-Thieme, R. Decker (Eds.), Data analysis, machine learning and applications, Springer-Verlag, Berlin, Heidelberg, 85-92. Available at: \url{http://dx.doi.org/10.1007/978-3-540-78246-9_11}
+Walesiak, M., Dudek, A. (2008), \emph{Identification of noisy variables for nonmetric and symbolic data in cluster analysis}, In: C. Preisach, H. Burkhardt, L. Schmidt-Thieme, R. Decker (Eds.), Data analysis, machine learning and applications, Springer-Verlag, Berlin, Heidelberg, 85-92. Available at: \doi{1007/978-3-540-78246-9_11}
 }
 \details{
 For HINoV in symbolic data analysis there can be used methods based on distance matrix such as hierarchical ("single", "ward", "complete", "average", "mcquitty", "median", "centroid") and optimization methods ("pam", "DClust") and also methods based on symbolic data table ("SClust").

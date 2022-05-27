@@ -38,7 +38,7 @@ The description of clusters of symbolic objects which differs according to the s
 }
 \author{
 Andrzej Dudek \email{andrzej.dudek@ue.wroc.pl}, Justyna Wilk \email{justyna.wilk@ue.wroc.pl}
-Department of Econometrics and Computer Science, Wroclaw University of Economics, Poland \url{http://keii.ue.wroc.pl/symbolicDA}
+Department of Econometrics and Computer Science, Wroclaw University of Economics, Poland \url{http://keii.ue.wroc.pl/symbolicDA/}
 }
 \references{
 Billard, L., Diday, E. (eds.) (2006), \emph{Symbolic Data Analysis. Conceptual Statistics and Data Mining}, Wiley, Chichester.

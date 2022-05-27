@@ -167,7 +167,7 @@ resul
 
 
 .is.symbolic<-function(table.Symbolic){
-	if (class(table.Symbolic)=="symbolic") is.Symbolic=TRUE else is.Symbolic=FALSE
+	if (inherits(table.Symbolic,"symbolic")) is.Symbolic=TRUE else is.Symbolic=FALSE
 	is.Symbolic
 }
 

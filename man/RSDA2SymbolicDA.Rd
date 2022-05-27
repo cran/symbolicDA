@@ -94,7 +94,7 @@ display.sym.table
 \author{
 Andrzej Dudek
 
-With included code from (former) RSDA package by Oldemar Rodriguez Rojas 
+With ideas from  RSDA package by Oldemar Rodriguez Rojas 
 }
 \keyword{Symbolic}
 \keyword{Table}

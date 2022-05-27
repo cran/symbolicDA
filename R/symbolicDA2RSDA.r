@@ -1,6 +1,6 @@
 RSDA2SymbolicDA<-function(rsda.object=NULL,from.csv=F,file=NULL, header = TRUE, sep, dec, row.names = NULL) {
 
-if((is.null(rsda.object) || class(rsda.object)!="sym.data.table") && from.csv){
+if((is.null(rsda.object) || !inherits(rsda.object,"sym.data.table")) && from.csv){
   rsda.object<-read.sym.table(file=file, header = header, sep=sep, dec=dec, row.names = row.names)
 }
 individualsNo<-rsda.object$N

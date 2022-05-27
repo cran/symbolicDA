@@ -17,7 +17,7 @@ Symbolic data table in full form
 \author{
 Andrzej Dudek \email{andrzej.dudek@ue.wroc.pl} 
 
-Department of Econometrics and Computer Science, University of Economics, Wroclaw, Poland \url{http://keii.ue.wroc.pl/symbolicDA}
+Department of Econometrics and Computer Science, University of Economics, Wroclaw, Poland \url{http://keii.ue.wroc.pl/symbolicDA/}
 }
 \references{
 Billard L., Diday E. (eds.) (2006), \emph{Symbolic Data Analysis, Conceptual Statistics and Data Mining}, John Wiley & Sons, Chichester.

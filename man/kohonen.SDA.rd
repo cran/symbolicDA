@@ -16,7 +16,7 @@ kohonen.SDA(data, rlen=100, alpha=c(0.05,0.01))
 }
 \author{
 Andrzej Dudek \email{andrzej.dudek@ue.wroc.pl}, Justyna Wilk \email{justyna.wilk@ue.wroc.pl}
-Department of Econometrics and Computer Science, Wroclaw University of Economics, Poland \url{http://keii.ue.wroc.pl/symbolicDA}
+Department of Econometrics and Computer Science, Wroclaw University of Economics, Poland \url{http://keii.ue.wroc.pl/symbolicDA/}
 }
 \references{
 Kohonen, T. (1995), \emph{Self-Organizing Maps}, Springer, Berlin-Heidelberg.

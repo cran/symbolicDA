@@ -22,7 +22,7 @@ See file \url{../doc/Symbolic_MDS.pdf} for further details
 Andrzej Dudek \email{andrzej.dudek@ue.wroc.pl}
 Marcin Pełka \email{marcin.pelka@ue.wroc.pl}
 
-Department of Econometrics and Computer Science, University of Economics, Wroclaw, Poland \url{http://keii.ue.wroc.pl/symbolicDA}
+Department of Econometrics and Computer Science, University of Economics, Wroclaw, Poland \url{http://keii.ue.wroc.pl/symbolicDA/}
 }
 \references{
 Billard L., Diday E. (eds.) (2006), \emph{Symbolic Data Analysis, Conceptual Statistics and Data Mining}, John Wiley & Sons, Chichester.
