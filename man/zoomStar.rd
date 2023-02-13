@@ -40,7 +40,7 @@ Bock, H.H., Diday, E. (eds.) (2000), \emph{Analysis of symbolic data. Explanator
 Diday, E., Noirhomme-Fraiture, M. (eds.) (2008), \emph{Symbolic Data Analysis with SODAS Software}, John Wiley & Sons, Chichester.
 }
 \seealso{
-\code{\link{plot3dInterval}}; \code{plotInterval} in \code{clusterSim}
+\code{plotInterval} in \code{clusterSim}
 }
 \examples{
 # LONG RUNNING - UNCOMMENT TO RUN

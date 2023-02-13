@@ -1,6 +1,6 @@
-1022d134473be7524f5faf46443b0f90 *DESCRIPTION
+d4d5165db0e2a3b64c89b54a407d2e8e *DESCRIPTION
 846b9353ac39f39b8ebaf488c85f070c *INDEX
-dbee5ecda788a2970bcbdab60355358a *NAMESPACE
+c540d159faf6c897753a50de073c26c2 *NAMESPACE
 192ccb6c2264c037b8d47c36ecd17dc1 *R/DClust.r
 33bc913f3daed682fe07d3e45ef76f2c *R/First.Lib.r
 2bed799cb4dd006f6d8c9c66672dbb2f *R/HINoV.SDA.r
@@ -20,7 +20,6 @@ ccca57ef2eb68956a31b4a0032cccb23 *R/index.G1d.r
 bb10f2337cdc0bd8c590362199f51bbe *R/kohonen.SDA.r
 e9537eb338df27e2b5a44424f0b76fed *R/parse.SO.r
 c0191b053b440ba0be273154c86d0532 *R/parseFormula.r
-c97f7fe63b9af975f3cca65ab2715c7e *R/plot3dInterval.r
 738a4e9e9c36a1826c5fa250e3b39e44 *R/replication.SDA.r
 8d3a1e0cfaf03c74a8d74df95e346f8c *R/save.SO.r
 a1985d214eb3c21c21825692edc8f1c6 *R/simple2SO.R
@@ -54,7 +53,7 @@ bceb2294e3ea98a7896f25f79af7e424 *inst/xml/cars.xml
 cbfe8f3511868754c0152e8770bcf7a4 *inst/xml/wave.xml
 66619952c7734f22886baa6570001eff *inst/xml/wine.xml
 f521f403d249096c85ea10ddf7a0785d *man/DClust.rd
-9c9c9cf47ee4dbcc0fc9c98bcc92f210 *man/HINoV.SDA.rd
+d8405fa3d47ed2f47c359e940d0fbc17 *man/HINoV.SDA.rd
 d2b794050971e742295f087db278ca03 *man/IchinoFS.SDA.rd
 5c19ba1cc74796114ad8ff20acde0bea *man/PCA.centers.SDA.rd
 0bd92f5bdcdce3333e2fc0011b12c9ee *man/PCA.mrpca.SDA.rd
@@ -79,7 +78,6 @@ f29c98243070b6d3cb268821a252c383 *man/iscal.sda.rd
 61aa6359aa42615fc6fdb77bd43c7365 *man/kernel.SDA.rd
 9ce37ebc2946f1357cd0c5479585895e *man/kohonen.SDA.rd
 8163cd86fd9f85007cfa00a58d7928f1 *man/parse.SO.rd
-c7ee82eb37a8eca8c4df054a26b988f2 *man/plot3dInterval.rd
 4d02ecc2f78bec4709f80b3e004e6181 *man/random.forest.SDA.rd
 51fb265313df229a2210f301ed6a3a62 *man/replication.SDA.rd
 9339168c5532dbbda37572479c68c937 *man/save.SO.rd
@@ -87,7 +85,7 @@ c7ee82eb37a8eca8c4df054a26b988f2 *man/plot3dInterval.rd
 568b6f3d38442a32140449904698d387 *man/subsdt.SDA.rd
 19ae8d2999798bd39e4362eb86d075b5 *man/symbolic.object.rd
 df943a7e66ac5a801b988580c0193155 *man/symscal.sda.rd
-14a59b0169b16d6a3a07793dcd9e93e9 *man/zoomStar.rd
+162a35cf44d028974aa4c3b9d082eed9 *man/zoomStar.rd
 76853a537cd4e817c1c56684b21ca251 *tests/DClust.R
 bfd837395cbe12ec6b42f7132a2603bc *tests/DClust.Rout.save
 1085776988f62df764619ad3845e331d *tests/HINoV.SDA.R
@@ -102,8 +100,6 @@ a20841c4edf32685f62bdda7af465a25 *tests/cluster.Description.SDA.Rout.save
 a98a33ad03fd89462f9f6b34ff1e3528 *tests/dist.SDA.Rout.save
 75db22aa6d4ab2604b9f012a8202d034 *tests/index.G1d.R
 86a4503bcb040d7b4de2491754037abd *tests/index.G1d.Rout.save
-815dbae9623a82301b176c0aa4092bf8 *tests/plot3dInterval.R
-3080e59b5e2b836323c1759edef56b9b *tests/plot3dInterval.Rout.save
 ee478d06da797195be726461362ca743 *tests/replication.SDA.R
 768fdaba90bd543f56ff9c59c4fd0881 *tests/replication.SDA.Rout.save
 bffd0345b6b74ec93ac15e7b259b3c50 *tests/save.SO.R

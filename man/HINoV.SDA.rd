@@ -2,7 +2,7 @@
 \alias{HINoV.SDA}
 \title{Modification of HINoV method for symbolic data}
 \description{
-Carmone, Kara \& Maxwell's Heuristic Identification of Noisy Variables (HINoV) method for symbolic data}
+Carmone, Kara and Maxwell's Heuristic Identification of Noisy Variables (HINoV) method for symbolic data}
 \usage{
 HINoV.SDA(table.Symbolic, u=NULL, distance="H", Index="cRAND",method="pam",...)
 }
