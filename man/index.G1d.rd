@@ -11,11 +11,11 @@
 value of Calinski-Harabasz pseudo F-statistic based on distance matrix
 }
 \author{
-Andrzej Dudek \email{andrzej.dudek@ue.wroc.pl}, Justyna Wilk \email{justyna.wilk@ue.wroc.pl}
-Department of Econometrics and Computer Science, Wroclaw University of Economics, Poland \url{http://keii.ue.wroc.pl/symbolicDA/}
+Andrzej Dudek \email{andrzej.dudek@ue.wroc.pl}, Justyna Wilk
+Department of Econometrics and Computer Science, Wroclaw University of Economics, Poland
 }
 \references{
-Calinski, T., Harabasz, J. (1974), \emph{A dendrite method for cluster analysis}, "Communications in Statistics", vol. 3, 1-27. Available at: \doi{/10.1080/03610927408827101}.
+Calinski, T., Harabasz, J. (1974), \emph{A dendrite method for cluster analysis}, "Communications in Statistics", vol. 3, 1-27.
 
 Everitt, B.S., Landau, E., Leese, M. (2001), \emph{Cluster analysis}, Arnold, London, p. 103. ISBN 9780340761199.
 

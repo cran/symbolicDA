@@ -23,8 +23,8 @@ probAggregation="P_1",s=0.5,p=2,variableSelection=NULL,weights=NULL)
 distance matrix of symbolic objects
 }
 \author{
-Andrzej Dudek \email{andrzej.dudek@ue.wroc.pl}, Justyna Wilk \email{justyna.wilk@ue.wroc.pl}
-Department of Econometrics and Computer Science, Wroclaw University of Economics, Poland \url{http://keii.ue.wroc.pl/symbolicDA/}
+Andrzej Dudek \email{andrzej.dudek@ue.wroc.pl}, Justyna Wilk
+Department of Econometrics and Computer Science, Wroclaw University of Economics, Poland
 }
 \references{
 Billard L., Diday E. (eds.) (2006), \emph{Symbolic Data Analysis, Conceptual Statistics and Data Mining}, John Wiley & Sons, Chichester.

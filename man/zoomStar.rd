@@ -31,8 +31,8 @@ b) circles - categories of multinominal (or multinominal with weights) variable 
 bar chart - additional chart for multinominal with weights variable in which each bar represents a weight (percentage share) of a category of the variable
 }
 \author{
-Andrzej Dudek \email{andrzej.dudek@ue.wroc.pl}, Justyna Wilk \email{justyna.wilk@ue.wroc.pl}
-Department of Econometrics and Computer Science, Wroclaw University of Economics, Poland \url{http://keii.ue.wroc.pl/symbolicDA/}
+Andrzej Dudek \email{andrzej.dudek@ue.wroc.pl}, Justyna Wilk
+Department of Econometrics and Computer Science, Wroclaw University of Economics, Poland
 }
 \references{
 Bock, H.H., Diday, E. (eds.) (2000), \emph{Analysis of symbolic data. Explanatory methods for extracting statistical information from complex data}, Springer-Verlag, Berlin.

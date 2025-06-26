@@ -37,8 +37,8 @@ The description of clusters of symbolic objects which differs according to the s
 "sum probabilities" - sum of weights of each category of the variable calculated for objects belonging to the cluster
 }
 \author{
-Andrzej Dudek \email{andrzej.dudek@ue.wroc.pl}, Justyna Wilk \email{justyna.wilk@ue.wroc.pl}
-Department of Econometrics and Computer Science, Wroclaw University of Economics, Poland \url{http://keii.ue.wroc.pl/symbolicDA/}
+Andrzej Dudek \email{andrzej.dudek@ue.wroc.pl}, Justyna Wilk
+Department of Econometrics and Computer Science, Wroclaw University of Economics, Poland
 }
 \references{
 Billard, L., Diday, E. (eds.) (2006), \emph{Symbolic Data Analysis. Conceptual Statistics and Data Mining}, Wiley, Chichester.

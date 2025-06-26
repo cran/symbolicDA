@@ -23,8 +23,8 @@ replication.SDA(table.Symbolic, u=2, method="SClust", S=10, fixedAsample=NULL, .
 \item{cRand}{value of average adjusted Rand index for S simulations}
 }
 \author{
-Andrzej Dudek \email{andrzej.dudek@ue.wroc.pl}, Justyna Wilk \email{justyna.wilk@ue.wroc.pl}
-Department of Econometrics and Computer Science,Wroclaw University of Economics, Poland \url{http://keii.ue.wroc.pl/symbolicDA/}
+Andrzej Dudek \email{andrzej.dudek@ue.wroc.pl}, Justyna Wilk
+Department of Econometrics and Computer Science,Wroclaw University of Economics, Poland
 }
 \references{
 Breckenridge, J.N. (2000), \emph{Validating cluster analysis: consistent replication and symmetry}, "Multivariate Behavioral Research", 35 (2), 261-285. Available at: \doi{10.1207/S15327906MBR3502_5}.
