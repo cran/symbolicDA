@@ -39,7 +39,7 @@ Walesiak, M., Dudek, A. (2008), \emph{Identification of noisy variables for nonm
 \details{
 For HINoV in symbolic data analysis there can be used methods based on distance matrix such as hierarchical ("single", "ward", "complete", "average", "mcquitty", "median", "centroid") and optimization methods ("pam", "DClust") and also methods based on symbolic data table ("SClust").
 
-See file \url{../doc/HINoVSDA_details.pdf} for further details
+See file $R_LIBS_USER\\symnbolicDA\\pdf\\HINoVSDA_details.pdf for further details
 }
 \seealso{
 \code{DClust}, \code{SClust}, \code{dist_SDA}; \code{HINoV.Symbolic}, \code{dist.Symbolic} in \code{clusterSim} library; \code{hclust} in \code{stats} library; \code{pam} in \code{cluster} library

@@ -16,7 +16,7 @@ kernel.SDA(sdt,formula,testSet,h,...)
 Kernel discriminant analysis for symbolic data is based on the intensity estimatior (that is based on dissimiliarity measure for symbolic data) due to the fact that classical well-known density estimator can not be applied. Density estimator can not be applied due to the fact that symbolic objects are not object of euclidean space and the integral operator for symbolic data is not applicable.
 
 
-For futher details see \url{../doc/Kernel_SDA.pdf.pdf}
+For futher details see $R_LIBS_USER\\symnbolicDA\\pdf\\Kernel_SDA.pdf.pdf
 
 }
 \value{

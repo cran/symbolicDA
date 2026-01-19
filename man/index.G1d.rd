@@ -28,7 +28,7 @@ Diday, E., Noirhomme-Fraiture, M. (eds.) (2008), \emph{Symbolic Data Analysis wi
 Dudek, A. (2007), \emph{Cluster Quality Indexes for Symbolic Classification. An Examination}, In: H.H.-J. Lenz, R. Decker (Eds.), Advances in Data Analysis, Springer-Verlag, Berlin, pp. 31-38. Available at: \doi{10.1007/978-3-540-70981-7_4}.
 }
 \details{
-See file \url{../doc/indexG1d_details.pdf} for further details
+See file $R_LIBS_USER\\symnbolicDA\\pdf\\indexG1d_details.pdf for further details
 }
 \seealso{
 \code{\link{DClust}}, \code{\link{SClust}}; \code{index.G2}, \code{index.G3}, \code{index.S}, \code{index.H},\code{index.KL},\code{index.Gap}, \code{index.DB} in \code{clusterSim} library

@@ -28,7 +28,7 @@ Bock, H.H., Diday, E. (eds.) (2000), \emph{Analysis of Symbolic Data. Explanator
 Diday, E., Noirhomme-Fraiture, M. (eds.) (2008), \emph{Symbolic Data Analysis with SODAS Software}, John Wiley & Sons, Chichester, pp. 373-392.
 }
 \details{
-See file \url{../doc/kohonenSDA_details.pdf} for further details
+See file $R_LIBS_USER\\symnbolicDA\\pdf\\kohonenSDA_details.pdf for further details
 }
 \seealso{
 \code{SO2Simple}; \code{som} in \code{kohonen} library

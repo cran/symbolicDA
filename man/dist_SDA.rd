@@ -52,7 +52,7 @@ Distance measurement for probabilistic symbolic objects consists of two steps:
 
 Distance measures for mixed symbolic objects - modified Minkowski metrics: L_1 (manhattan distance), L_2 (euclidean distance).
 
-See file \url{../doc/dist_SDA.pdf} for further details
+See file $R_LIBS_USER\\symnbolicDA\\pdf\\dist_SDA.pdf for further details
 
 NOTE !!!: In previous version of package this functian has been called dist.SDA.
 }

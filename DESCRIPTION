@@ -1,7 +1,7 @@
 Package: symbolicDA
 Title: Analysis of Symbolic Data
-Version: 0.7-2
-Date: 2025-06-26
+Version: 0.7-3
+Date: 2026-01-20
 Authors@R: c(person(given = "Andrzej",
                         family = "Dudek",
                         role = c("aut", "cre"),
@@ -33,11 +33,11 @@ Description: Symbolic data analysis methods: importing/exporting data from ASSO 
 License: GPL (>= 2)
 Encoding: UTF-8
 NeedsCompilation: no
-Packaged: 2025-06-26 11:07:52 UTC; andrzej
+Packaged: 2026-01-19 14:01:09 UTC; andrzej
 Author: Andrzej Dudek [aut, cre],
   Marcin Pelka [aut],
   Justyna Wilk [aut] (to 2017-09-20),
   Marek Walesiak [aut] (from 2018-02-01)
 Maintainer: Andrzej Dudek <andrzej.dudek@ue.wroc.pl>
 Repository: CRAN
-Date/Publication: 2025-06-26 13:40:06 UTC
+Date/Publication: 2026-01-19 15:10:02 UTC

@@ -1,4 +1,4 @@
-83f07cef1217641693da4bd9b194b268 *DESCRIPTION
+79b754c368994bf44bf8437402a12963 *DESCRIPTION
 846b9353ac39f39b8ebaf488c85f070c *INDEX
 0ec657403e506da0c3ee1f7f62e63113 *NAMESPACE
 192ccb6c2264c037b8d47c36ecd17dc1 *R/DClust.r
@@ -53,7 +53,7 @@ bceb2294e3ea98a7896f25f79af7e424 *inst/xml/cars.xml
 cbfe8f3511868754c0152e8770bcf7a4 *inst/xml/wave.xml
 66619952c7734f22886baa6570001eff *inst/xml/wine.xml
 2056571887a10fd04bffe945b5374ea6 *man/DClust.rd
-3595b39989a64b40fba6207a3bafea77 *man/HINoV.SDA.rd
+b684f16e3ddb53ad8a2dbcd5aaaca9c9 *man/HINoV.SDA.rd
 7a6efcebaed19276822948351d5c7927 *man/IchinoFS.SDA.rd
 79deee4b789d3432e42e98e2b7d320af *man/PCA.centers.SDA.rd
 d769109787afbae215e73e34a1310487 *man/PCA.mrpca.SDA.rd
@@ -69,14 +69,14 @@ defb135f7fd8452226680f278e5ca3e2 *man/SO2Simple.rd
 f6c68f08454d67bdeebc7e5ee3334c74 *man/cluster.Description.SDA.rd
 4942862b8c9b187bde26466a813cf40c *man/data_symbolic.rd
 d4ce11279151514cd8da20623a17e254 *man/decisionTree.SDA.rd
-1d47123d1cac65d1b669f18ae52cddca *man/dist_SDA.rd
+570b57715d0c4262c8fc76138038fcac *man/dist_SDA.rd
 695c60179b9536d7be38db1e65e25174 *man/draw.decisionTree.SDA.rd
 b00126234c4f8b685b691dda504650d9 *man/generate.SO.rd
-164e1e1da248425e06b7e052aa56c0c7 *man/index.G1d.rd
+203b5036de933fa6be51daa619a32572 *man/index.G1d.rd
 95d70128a511c6bca7f966b617d0b0ed *man/interscal.sda.rd
 0e6c7fa3db1582281ddcfd2537058766 *man/iscal.sda.rd
-de3b9c141fc9a4810efaedf7fc610b12 *man/kernel.SDA.rd
-80e8566e37deef5dad2a131d6cc3ebdb *man/kohonen.SDA.rd
+6121bd037b7e56e1e65154fbeae039be *man/kernel.SDA.rd
+60be28848a19c299be56070ee9292db6 *man/kohonen.SDA.rd
 80b1929bf351cd25391fcceeb4d6dd9c *man/parse.SO.rd
 bac966d7e223d6f4c6ba618f821371e6 *man/random.forest.SDA.rd
 432f4908056403e96f9d79fe65a52267 *man/replication.SDA.rd
